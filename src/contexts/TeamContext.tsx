@@ -42,7 +42,7 @@ const getImagePath = (name: string): string => {
     "Boburbek Panjiev Boboyorovich": "Boburbek Panjiev Boboyorovich.JPG",
     "Boynazarova Shukrona Sheraliyevna": "Boynazarova Shukrona Sheraliyevna.jpg",
     "Charos Mamayusupova Barot qizi": "Charos Mamayusupova Barot qizi.jpg",
-    "Choriyev Said Akhtam Sanjar o'g'li": "Choriyev Said Akhtam Sanjar o'g'li.JPG",
+    "Choriyev Said Akhtam Sanjar o'g'li": "Choriyev Said Akhtam Sanjar o'g'li.png",
     "Choriyeva Hurzoda Sanjar qizi": "Choriyeva Hurzoda Sanjar qizi.jpg",
     "Eldorbek Safarov Muzaffarovich": "Eldorbek Safarov Muzaffarovich.jpg",
     "Ergashev Sardor": "Ergashev Sardor Azizjon o'g'li.JPG",
@@ -60,7 +60,7 @@ const getImagePath = (name: string): string => {
     "Ko'charov Muhammad Ziyodullo oʻgʻli": "Ko'charov Muhammad Ziyodulla oʻgʻli.jpg",
     "Madiyev Sardor Kenja oʻgʻli": "Madiyev Sardor Kenja oʻgʻli.JPG",
     "Murotov Manuchekhr Sulaymonkulovich": "Murotov Manuchekhr Sulaymonkulovich.JPG",
-    "Numonov Samandar Olimjon o'g'li": "Numonov Samandar Olimjon o'g'li.jpg",
+    "Numonov Samandar Olimjon o'g'li": "Numonov Samandar Olimjon o'g'li.png",
     "Nurbek Salomov Choriyevich": "Nurbek Salomov Choriyevich.jpg",
     "Rizvonbek Hamroqulov Firoʻz oʻgʻli": "Rizvonbek Hamroqulov Firo'z o'g'li.png",
     "Roʻziyev Mirsaid Baxtiyor oʻgʻli": "Ro'ziyev Mirsaid Baxtiyor o'g'li.jpg",
@@ -417,6 +417,14 @@ const defaultTeamMembers: TeamMember[] = [
     role: "Volunteer",
     bio: "Muxlisa volunteers for our conservation awareness campaigns.",
     image: getImagePath("Toshtemirova Muxlisa Akmal qizi"),
+    category: "Volunteers"
+  },
+  {
+    id: 41,
+    name: "Numonov Samandar Olimjon o'g'li",
+    role: "Volunteer",
+    bio: "Samandar is an active volunteer contributing to our environmental initiatives.",
+    image: getImagePath("Numonov Samandar Olimjon o'g'li"),
     category: "Volunteers"
   }
 ];

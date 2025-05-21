@@ -76,7 +76,17 @@ const getImagePath = (name: string): string => {
 
   // Check if the name has a mapped image
   if (imageMap[name]) {
-    return encodeImagePath(`/images/team/${imageMap[name]}`);
+    // In production, try to use the direct path first
+    if (process.env.NODE_ENV === 'production') {
+      const directPath = `/images/team/${imageMap[name]}`;
+      console.log(`[PROD] Trying direct path for ${name}:`, directPath);
+      return directPath;
+    }
+    
+    // In development, use the encoded path
+    const encodedPath = encodeImagePath(`/images/team/${imageMap[name]}`);
+    console.log(`[DEV] Using encoded path for ${name}:`, encodedPath);
+    return encodedPath;
   } else {
     // Return default logo for members without photos
     console.warn(`No image found for team member: ${name}`);
